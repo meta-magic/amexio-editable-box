@@ -18,8 +18,12 @@ export class AmexioEditableBoxComponent implements OnInit {
     }
 
     updateData(event: any, item:any){
-        item.content = event.target.innerHTML;
-        item.content= item.content.replaceAll('&nbsp;',' ');
+        debugger;
+         item.content = event.target.innerText;
+        // item.content= item.content.replaceAll('&nbsp;',' ');
+        // item.content= item.content.replaceAll('<br>','')
+       // event.target.style.width = item.content.length + "ch";
+       //event.target.style.width = ((item.content.length + 1) * 8) + 'px';
         debugger;
     }
 

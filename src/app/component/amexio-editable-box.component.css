@@ -1,14 +1,14 @@
 span{
-    padding: 0px 5px 0px 0px;
+    padding: 0px 5px;
     font-family: inherit;
     font-size: inherit;
 }
 
 .input {
     font-family: inherit;
-    font-size: inherit;
     color: purple;
-    padding: 0px 5px 0px 0px;
+    border:none;
+    font-size:inherit;
   }
 
 .input:hover{
@@ -16,5 +16,6 @@ span{
 }
 .input:focus{
     border:1px solid purple;
+    
 }
  
