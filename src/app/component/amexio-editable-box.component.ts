@@ -19,6 +19,8 @@ export class AmexioEditableBoxComponent implements OnInit {
 
     updateData(event: any, item:any){
         item.content = event.target.innerHTML;
+        item.content= item.content.replaceAll('&nbsp;',' ');
+        debugger;
     }
 
 }

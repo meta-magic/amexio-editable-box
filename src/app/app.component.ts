@@ -39,7 +39,7 @@ export class AppComponent {
         "type": "editabletextfield",
         "content": "ABILENE, TX-PEPSI BEV CO.",
         "color": "purple",
-        "newline": true
+        "newline": false
       },
       {
         "type": "label",

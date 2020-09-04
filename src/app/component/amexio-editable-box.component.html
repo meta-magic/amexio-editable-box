@@ -1,11 +1,10 @@
-<hr />
+
 <div class="maindiv">
     <ng-container *ngFor="let item of data">
         <span *ngIf="item.type === 'label'" [style.color]="item.color">{{item.content}}</span>
-        <span class="editabletextfield" contenteditable *ngIf="item.type === 'editabletextfield'"  [style.color]="item.color" (input)="updateData($event, item)">{{item.content}}</span>
+        <span class="input" role="textbox" contenteditable  *ngIf="item.type === 'editabletextfield'" (blur)="updateData($event, item)">{{item.content}}</span> 
+        <!-- <span  role="textbox"   class="editabletextfield" contenteditable *ngIf="item.type === 'editabletextfield'"  [style.color]="item.color" (input)="updateData($event, item)">{{item.content}}</span> -->
+        <!-- <input type="text" [size]="item.content.length" *ngIf="item.type === 'editabletextfield'"  [(ngModel)]="item.content"> -->
         <br *ngIf="item.newline === true"/>
     </ng-container>
 </div>
-<pre>
-{{data|json}}
-</pre>
